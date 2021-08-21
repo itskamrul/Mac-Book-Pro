@@ -72,12 +72,11 @@ expressDelivery.addEventListener('click', function (){
 });
 
 // promo code handler
-/* document.getElementById('promo-btn').addEventListener('click', function (){
-    const getTotalPrice = parseInt(updatePrice());
+document.getElementById('promo-btn').addEventListener('click', function (){
+    const getTotalPrice = priceTotal();
     const promoInput = document.getElementById('promo-input');
     const promoInputValue = promoInput.value;
-    const promoId = 'stevekaku';
-    if (promoInputValue == promoId){
+    if (promoInputValue == 'stevekaku'){
         const promoDiscount = getTotalPrice / 5;
         const discount = getTotalPrice - promoDiscount;
         promoPrice.innerText = discount;
@@ -87,4 +86,4 @@ expressDelivery.addEventListener('click', function (){
         promoPrice.innerText = getTotalPrice
     };
     promoInput.value = '';
-}) */
+});
