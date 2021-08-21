@@ -25,17 +25,21 @@
             </div>
             <div class="mb-4">
                 <h5>Memory</h5>
-                <button class="btn btn-ligh btn-outline-secondary">8GB unified memory</button>
-                <button class="btn btn-ligh btn-outline-secondary">16GB unified Memory</button>
+                <button id="memory-8" class="btn btn-ligh btn-outline-secondary">8GB unified memory</button>
+                <button id="memory-16" class="btn btn-ligh btn-outline-secondary">16GB unified
+                    Memory</button>
             </div>
             <div class="mb-4">
                 <div>
                     <h5>Storage</h5>
                 </div>
                 <div>
-                    <button class="btn btn-ligh btn-outline-secondary">256GB SSD storage</button>
-                    <button class="btn btn-ligh btn-outline-secondary">512GB SSD storage</button>
-                    <button class="btn btn-ligh btn-outline-secondary">1TB SSD storage</button>
+                    <button id="storage-256" class="btn btn-ligh btn-outline-secondary">256GB SSD
+                        storage</button>
+                    <button id="storage-512" class="btn btn-ligh btn-outline-secondary">512GB SSD
+                        storage</button>
+                    <button id="storage-1tb" class="btn btn-ligh btn-outline-secondary">1TB SSD
+                        storage</button>
                 </div>
             </div>
             <div class="mb-4">
@@ -43,42 +47,47 @@
                     <h5>Choose your delivery option</h5>
                 </div>
                 <div>
-                    <button class="btn btn-ligh btn-outline-secondary">Friday, Aug FREE Prime delivery</button>
-                    <button class="btn btn-ligh btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+                    <button id="free" class="btn btn-ligh btn-outline-secondary">Friday, Aug FREE Prime
+                        delivery</button>
+                    <button id="express" class="btn btn-ligh btn-outline-secondary">Friday, Aug 21
+                        Delivery charge $20</button>
                 </div>
             </div>
             <div class="col-4 fw-bolder">
                 <div class="border-bottom ps-1 d-flex justify-content-between">
                     <p>Best Price</p>
-                    <p>$<span>1299</span></p>
+                    <p>$<span id="regular-price">1299</span></p>
                 </div>
                 <div class="border-bottom ps-1 d-flex justify-content-between">
                     <p>Extra Memory Cost</p>
-                    <p>$<span>0</span></p>
+                    <p>$<span id="extra-memory">0</span></p>
                 </div>
                 <div class="border-bottom ps-1 d-flex justify-content-between">
                     <p>Extra Storage Cost</p>
-                    <p>$<span>0</span></p>
+                    <p>$<span id="extra-storage">0</span></p>
                 </div>
                 <div class="border-bottom border-3 ps-1 d-flex justify-content-between">
                     <p>Delivery charge</p>
-                    <p>$<span>0</span></p>
+                    <p>$<span id="delivery-charge">0</span></p>
                 </div>
                 <div class="border-bottom ps-1 d-flex justify-content-between">
                     <p>Total Price</p>
-                    <p>$<span>1299</span></p>
+                    <p>$<span id="total-price">1299</span></p>
                 </div>
                 <div class="d-flex">
-                    <input type="text">
-                    <button class="btn btn-danger">Apply</button>
+                    <input id="promo-input" type="text" value="stevekaku">
+                    <button id="promo-btn" class="btn btn-danger">Apply</button>
                 </div>
             </div>
         </section>
         <hr>
     </main>
     <footer class="text-center">
-        <h2>Total: $<span>1299</span></h2>
+        <h2>Total: $<span id="promo-price">1299</span></h2>
     </footer>
+
+    <!-- javascript -->
+    <script src="js/app.js"></script>
 
 </body>
 
